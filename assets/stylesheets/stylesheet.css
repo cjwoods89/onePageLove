@@ -71,7 +71,7 @@ body {
   margin-top: 25px;
   padding-top: 15px;
   text-align: center;
-  width: 23%;
+  width: 450px;
   height: 325px;
   background-color: white;
   border-radius: 2px;
@@ -214,6 +214,116 @@ body {
   color: #949191;
 }
 
-/*#servicesWrap {
-  height: 500px;
-}*/
+#servicesWrap {
+  width: 100%;
+  height: 456px;
+  margin-top: -16px;
+  background-color: #f5faff;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: center;
+}
+
+#servicesWrap img {
+  height: 100px;
+  width: 100px;
+}
+
+#servicesCards hr {
+  width: 65px;
+  border: 0;
+  border-top: 3px solid #22c6b0;
+}
+
+#servicesCards {
+  width: 100%;
+  padding: 100px 80px 50px 80px;
+  color: #949191;
+}
+
+#servicesCards #servicesLeftCard {
+  float: left;
+  width: 33%;
+}
+
+#servicesCards #servicesRightCard {
+  float: right;
+  width: 33%;
+}
+
+#servicesCards #servicesCenterCard {
+  display: inline;
+}
+
+#servicesCenterCard .subCardContent {
+  margin-left: 34%;
+  margin-right: 34%;
+}
+
+#fifthWrap {
+  height: 279px;
+  display: inline;
+  text-align: center;
+}
+
+#fifthWrap img {
+  transition: all .2s ease;
+  vertical-align: middle;
+  display:inline-block;
+  overflow:hidden;
+  width: 19%;
+  height: auto;
+}
+
+#fifthWrap img:hover {
+  /*height: 279px;*/
+  max-height: 279px;
+  max-width: 100%;
+  transform: scale(1.1);
+  display:inline-block;
+  overflow:hidden;
+}
+
+#peopleSayWrap {
+  height: 827px;
+  background-color: #f5faff;
+}
+
+#peopleSayWrapHeader {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 3%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 50px;
+  color: #2f2e2e;
+}
+
+#peopleSayWrap hr {
+  width: 120px;
+  border: 0;
+  border-top: 3px solid #22c6b0;
+}
+
+#peopleSayWrapSubHeader img {
+  padding-top: 2%;
+  padding-left: 40%;
+}
+
+#peopleSayWrapSubHeader h4 {
+  font-size: 16px;
+  text-align: center;
+  color: #949191;
+}
+
+#subscribeWrap {
+  margin: -18px 0 0 0;
+  height: 109px;
+  background-color: #bcf5e6;
+}
+
+#footerWrap {
+  height: 520px;
+}
