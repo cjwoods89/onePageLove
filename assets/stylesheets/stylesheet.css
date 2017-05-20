@@ -2,7 +2,7 @@
 
 * {
   box-sizing: border-box;
-  /*border: 1px red dashed;*/
+  border: 1px red dashed;
 }
 
 body {
@@ -33,12 +33,14 @@ body {
 #headerWrap h2 {
   padding-top: 0px;
   margin-top: 10px;
+  width: 100%;
 }
 
 #headerWrap h6 {
   font-size: 12px;
   letter-spacing: 8px;
   margin-top: -20px;
+  width: 100%;
 }
 
 #headerLogo {
@@ -51,10 +53,10 @@ body {
 }
 
 #headerWrapContact h1 {
-  padding-top: 80px;
+  padding-top: 5%;
   font-size: 80px;
   font-style: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1%;
 }
 
 #headerWrapContactText h2 {
@@ -67,12 +69,12 @@ body {
 }
 
 #headerWrapContactForm {
-  margin-left: 38%;
-  margin-top: 25px;
-  padding-top: 15px;
-  text-align: center;
-  width: 450px;
-  height: 325px;
+  display: inline-block;
+  position: relative;
+  padding: 32px 30px 31px;
+  background: #FFF;
+  max-width: 470px;
+  width: 100%;
   background-color: white;
   border-radius: 2px;
 }
@@ -114,19 +116,19 @@ body {
 #fashionWrap {
   width: 100%;
   height: 835px;
-  margin-top: -16px;
-  margin-bottom: -16px;
   background-color: white;
   padding-left: 15%;
   padding-right: 15%;
+  padding-bottom: 25%;
+  padding-top: 1%;
   text-align: center;
+  vertical-align: top;
 }
 
 #fashionWrapHeader {
   width: 100%;
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 2.5%;
   text-align: center;
   text-transform: uppercase;
   font-size: 25px;
@@ -148,32 +150,44 @@ body {
 
 #fashionCards {
   width: 100%;
-  padding: 50px 80px 50px 80px;
   color: #949191;
+  /*display: inline;*/
+  display: table;
 }
 
 #fashionCards #leftCard {
   float: left;
-  width: min-content;
+  width: 30%;
 }
 
 #fashionCards #rightCard {
   float: right;
-  width: min-content;
+  width: 30%;
 }
 
-#fashionCards #centerCard {
-  display: inline;
+#fashionCards #centerCard img {
+  width: 30%;
 }
 
 #centerCard .subCardContent {
   margin-left: 34%;
   margin-right: 34%;
+  margin-bottom: 1%;
+  padding-bottom: 1%;
 }
 
 #fashionCards .subCardContent h2 {
   color: #22c6b0;
   text-transform: uppercase;
+}
+
+#fashionCards img {
+  /*position: absolute;*/
+  /*top: 0;
+  left: 0;*/
+  width: 100%;
+  max-height: 800px;
+  z-index 0;
 }
 
 #thirdWrap {
@@ -224,9 +238,15 @@ body {
   text-align: center;
 }
 
+#servicesWrap h2 {
+  color: black;
+  text-transform: uppercase;
+}
+
 #servicesWrap img {
   height: 100px;
-  width: 100px;
+  /*width: 100px;*/
+  opacity: .3;
 }
 
 #servicesCards hr {
@@ -261,31 +281,39 @@ body {
 }
 
 #fifthWrap {
-  height: 279px;
-  display: inline;
+  height: 15%;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  /*display: inline;*/
   text-align: center;
+  background-color: white;
 }
 
 #fifthWrap img {
   transition: all .2s ease;
   vertical-align: middle;
   display:inline-block;
-  overflow:hidden;
-  width: 19%;
+  overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  width: 19.7%;
   height: auto;
+  padding: 5% 0 2% 0;
+  margin: 0 -.05% 0 0;
 }
 
 #fifthWrap img:hover {
   /*height: 279px;*/
-  max-height: 279px;
-  max-width: 100%;
-  transform: scale(1.1);
+  /*max-height: 279px;
+  max-width: 100%;*/
+  transform: scale(1.05);
+  transform-style: flat;
   display:inline-block;
   overflow:hidden;
 }
 
 #peopleSayWrap {
-  height: 827px;
+  height: 650px;
   background-color: #f5faff;
 }
 
@@ -308,14 +336,31 @@ body {
 }
 
 #peopleSayWrapSubHeader img {
-  padding-top: 2%;
-  padding-left: 40%;
+  /*width: 50%;*/
+  margin: 1% auto;
+  display: table;
+  text-align: center;
+  border-radius: 50%;
 }
 
 #peopleSayWrapSubHeader h4 {
   font-size: 16px;
   text-align: center;
   color: #949191;
+}
+
+#peopleSayAds {
+  width: 100%;
+  display: table;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin: 0 auto;
+}
+
+#peopleSayAds img {
+  margin: 6% 2% 2% 6%;
+  vertical-align: middle;
+  width: 25%;
 }
 
 #subscribeWrap {
