@@ -2,7 +2,7 @@
 
 * {
   box-sizing: border-box;
-  border: 1px red dashed;
+  /*border: 1px red dashed;*/
 }
 
 body {
@@ -72,10 +72,10 @@ body {
   display: inline-block;
   position: relative;
   padding: 32px 30px 31px;
+  margin-top: 32px;
   background: #FFF;
   max-width: 470px;
   width: 100%;
-  background-color: white;
   border-radius: 2px;
 }
 
@@ -150,6 +150,7 @@ body {
 
 #fashionCards {
   width: 100%;
+  margin-top: 8%;
   color: #949191;
   /*display: inline;*/
   display: table;
@@ -182,9 +183,6 @@ body {
 }
 
 #fashionCards img {
-  /*position: absolute;*/
-  /*top: 0;
-  left: 0;*/
   width: 100%;
   max-height: 800px;
   z-index 0;
@@ -358,17 +356,103 @@ body {
 }
 
 #peopleSayAds img {
-  margin: 6% 2% 2% 6%;
+  margin: 6% 2% 2% 8%;
   vertical-align: middle;
-  width: 25%;
+  padding-left: 3%;
+  width: 20%;
 }
 
 #subscribeWrap {
-  margin: -18px 0 0 0;
+  margin: -1.5% 0 0 0;
+  padding-top: 2%;
+  padding-bottom: 1%;
   height: 109px;
   background-color: #bcf5e6;
+  text-transform: uppercase;
+  /*display: inline-block;*/
+  text-align: center;
+  width: 100%;
 }
 
+#subscribeWrap span {
+  font-size: 30px;
+  letter-spacing: 2px;
+  padding: 0 15px 0 0;
+}
+
+#subscribeWrap .subscribeInput {
+  text-transform: uppercase;
+  padding: 15px 5px 15px 5px;
+  /*display: table-row;*/
+}
+
+#subscribeWrap #subscribeText{
+  color: gray;
+  margin-right: .5%;
+  padding-left: 1%;
+  width: 430px;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+#subscribeWrap #subscribeSubmit {
+  color: white;
+  background-color: #2fe6ce;
+  border-width: 0;
+  width: 150px;
+  font-size: 18px;
+  padding: 1% .5% 1% .5%;
+}
+
+#subscribeWrap #subscribeSubmit:hover {
+  background-color: #22c6b0;
+}
+
+
 #footerWrap {
-  height: 520px;
+  height: 430px;
+  text-align: center;
+  color: white;
+}
+
+#footerWrapHeader {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#footerWrapHeader h1 {
+  font-size: 70px;
+}
+
+#footerWrap hr {
+  margin-top: 6%;
+  margin-bottom: 3%;
+  width: 120px;
+  border: 0;
+  border-top: 3px solid white;
+}
+
+#footerWrap h2{
+  margin-bottom: 4%;
+}
+
+#footerWrap button {
+  color: white;
+  background-color: #2fe6ce;
+  border-color: white;
+  border: solid;
+  border-width: 2px;
+  width: 28%;
+  font-size: 20px;
+  padding: 1% .5% 1% .5%;
+  text-transform: uppercase;
+}
+
+#footerWrap button:hover {
+  background-color: white;
+  color: #2fe6ce;
+}
+#footerWrap h6{
+  padding-top: 2%;
+  letter-spacing: 1px;
 }
