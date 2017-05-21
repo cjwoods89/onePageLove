@@ -14,9 +14,8 @@ body {
 
 #headerWrap {
   width: 100%;
-  height: 1085px;
+  height: 1000px;
   margin-top: -15px;
-  background-image: url("../images/staticVideo.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -25,9 +24,26 @@ body {
   color: white;
 }
 
-#headerLogo img {
+/*#headerLogo img {
   margin-bottom: 0;
   padding-bottom: 0;
+}*/
+
+#headerLogo video {
+  z-index: -100;
+  background: url("../videos/video-bg.mp4");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
 #headerWrap h2 {
@@ -77,24 +93,21 @@ body {
   max-width: 470px;
   width: 100%;
   border-radius: 2px;
+  border-width: .5;
+  border: solid;
 }
 
 #headerWrapContactForm .inputFields {
   width: 85%;
   height: 55px;
   margin-bottom: 10px;
-  border-width: 0.2px;
-  border-color: #c4c2c2;
+  font-size: 20px;
+  color: #c4c2c2;
+  padding-left: 15px;
 }
 
 #headerWrapContactForm #name {
   margin-top: 15px;
-}
-
-#headerWrapContactForm .inputFields {
-  font-size: 20px;
-  color: gray;
-  padding-left: 15px;
 }
 
 #headerWrapContactForm #submit {
@@ -102,6 +115,7 @@ body {
   background-color: #2fe6ce;
   font-size: 25px;
   font-family: arial;
+  border: solid;
   border-collapse: collapse;
   height: 65px;
 }
@@ -311,7 +325,7 @@ body {
 }
 
 #peopleSayWrap {
-  height: 650px;
+  height: 700px;
   background-color: #f5faff;
 }
 
@@ -383,7 +397,9 @@ body {
 #subscribeWrap .subscribeInput {
   text-transform: uppercase;
   padding: 15px 5px 15px 5px;
-  /*display: table-row;*/
+  border: solid;
+  border-width:thin;
+  border-color: #2fe6ce;
 }
 
 #subscribeWrap #subscribeText{
@@ -452,6 +468,7 @@ body {
   background-color: white;
   color: #2fe6ce;
 }
+
 #footerWrap h6{
   padding-top: 2%;
   letter-spacing: 1px;
